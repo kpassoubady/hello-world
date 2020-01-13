@@ -18,10 +18,6 @@ steps:
     echo Welcome to Azure Pipeline.
   displayName: 'Run a multi-line script'
 
-- script: hello.sh
-  displayName: 'Run a one-line script'
-
-
 - task: Shellpp@0
   inputs:
     type: 'FilePath'
