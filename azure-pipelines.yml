@@ -21,6 +21,8 @@ steps:
 - script: hello.sh
   displayName: 'Run a one-line script'
 
-- task: Bash@3
+
+- task: Shellpp@0
   inputs:
-    filePath: 'hello.sh'
+    type: 'FilePath'
+    scriptPath: './hello.sh'
